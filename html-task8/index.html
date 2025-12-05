@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- task1 -->
+    <form style="width: 50%;">
+        <fieldset style="border: 1px dashed;">
+            <legend>Personal Details</legend>
+            <div>
+                <label for="salutation">Salutation</label>
+                <select id="salutation" name="salutation" required>
+                    <option>--None--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+
+            <div>
+                <label>
+                    First Name
+                    <input required type="text" name="" id="name">
+                </label><br><br>
+                <label>
+                    Last Name
+                    <input required type="text" name="" id="name">
+                </label>
+            </div><br>
+            <div>
+                <p>select gender:
+                    <label>
+                        Male:<input required type="radio" name="gender">
+                    </label>
+                    <label>
+                        FaMale:<input required type="radio" name="gender">
+                    </label>
+                </p>
+            </div>
+            <div>
+                <label>
+                    Email:
+                    <input required type="email">
+                </label>
+            </div>
+            <div><br>
+                <label>
+                    Date of Birth:
+                    <input type="date">
+                </label>
+            </div> <br>
+            <div>
+                <label for="text">Mesajınız:</label><br>
+                <textarea name="text" id="text" rows="5" cols="40" required></textarea><br><br>
+            </div>
+            <div>
+
+                <button type="submit">submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
