@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <!-- task1 -->
-    <form style="width: 50%;">
+    <form method="get" style="width: 50%;">
         <fieldset style="border: 1px dashed;">
             <legend>Personal Details</legend>
             <div>
@@ -22,8 +23,6 @@
                     <option value="4">4</option>
                 </select>
             </div>
-
-
             <div>
                 <label>
                     First Name
@@ -35,14 +34,15 @@
                 </label>
             </div><br>
             <div>
-                <p>select gender:
-                    <label>
-                        Male:<input required type="radio" name="gender">
-                    </label>
-                    <label>
-                        FaMale:<input required type="radio" name="gender">
-                    </label>
-                </p>
+                <span>
+                    select gender:
+                </span>
+                <label>
+                    Male:<input required type="radio" name="gender">
+                </label>
+                <label>
+                    FaMale:<input required type="radio" name="gender">
+                </label>
             </div>
             <div>
                 <label>
@@ -65,7 +65,118 @@
                 <button type="submit">submit</button>
             </div>
         </fieldset>
+    </form><br><br><br><br>
+    <!-- task2 -->
+    <form>
+        <table border="1" cellpadding="5">
+            <tr>
+                <td><b>First Name</b></td>
+                <td><input required type="text"></td>
+            </tr>
+            <tr>
+                <td><b>Last Name</b></td>
+                <td><input required type="text"></td>
+            </tr>
+            <tr>
+                <td><b>Email</b></td>
+                <td><input required type="email"></td>
+            </tr>
+            <tr>
+                <td><b>Password</b></td>
+                <td><input required type="password"></td>
+            </tr>
+            <tr>
+                <td><b>Re-Enter Password</b></td>
+                <td><input required type="password"></td>
+            </tr>
+            <tr>
+                <td>
+                    <span>
+                        select gender:
+                    </span>
+                </td>
+                <td>
+                    <label>
+                        Male:<input required type="radio" name="gender">
+                    </label>
+                    <label>
+                        FaMale:<input required type="radio" name="gender">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Age</b></td>
+                <td><input required type="number"></td>
+            </tr>
+            <tr>
+                <td><b>Number</b></td>
+                <td><input required type="number"></td>
+            </tr>
+            <tr>
+                <td><b>Address</b></td>
+                <td><textarea name="address" rows="5" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>State</b></td>
+                <td><input required type="text"></td>
+            </tr>
+            <tr>
+                <td><b>Country</b></td>
+                <td>
+                    <select name="" id="">
+                        <option value="az">Choose your Country</option>
+                        <option value="az">AZ</option>
+                        <option value="tr">TR</option>
+                        <option value="ru">RU</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Language Know</b></td>
+                <td>
+                    <label>
+                        <span>English</span>
+                        <input type="checkbox" name="" id="">
+                    </label>
+                    <label>
+                        <span>English</span>
+                        <input type="checkbox" name="" id="">
+                    </label>
+                    <label>
+                        <span>English</span>
+                        <input type="checkbox" name="" id="">
+                    </label>
+                    <label>
+                        <span>English</span>
+                        <input type="checkbox" name="" id="">
+                    </label>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>
+
+                        <input type="checkbox">
+                        <span>hereby declere all the given details are true</span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">
+                    Login to <a target="_blank" href="https://www.google.com/">Google</a> Website
+                </td>
+            </tr>
+            </tr>
+            <tr style="text-align: center;">
+                <td colspan="3">
+                    <button style="text-align: end;" type="submit">Register</button>
+                </td>
+            </tr>
+        </table>
     </form>
+
 </body>
 
 </html>
