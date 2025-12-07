@@ -1,0 +1,13 @@
+body {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.sec-img-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-img-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
