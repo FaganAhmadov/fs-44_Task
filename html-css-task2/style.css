@@ -1,11 +1,11 @@
-* {
+body {
   margin: 0;
   padding: 0;
 }
 
 ol {
   width: 400px;
-  margin: auto;
+  margin: 130px auto;
 }
 
 li:first-child {
