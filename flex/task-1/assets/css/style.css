@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  min-height: 100vh; /* ekranın tam hündürlüyü */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* yuxarıdan-aşağı ortalama */
+  align-items: center;
+}
+.card-hdr-txt {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.card-hdr-txt h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #3b3b44;
+}
+
+.card {
+  cursor: pointer;
+  border: 1px solid #303036;
+  border-radius: 10px;
+  width: 25%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  transition: all 0.25s;
+}
+.card:hover {
+  box-shadow: 2px 4px 20px 1px rgba(45, 45, 45, 0.13);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.card-sec1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.client-name h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.client-name p {
+  color: #63636b;
+  font-size: 1rem;
+}
+
+.client-info {
+  color: #63636b;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 30px;
+  width: 250px;
+  background: linear-gradient(to right, #568ad3 0, #0f58bd 100%);
+  color: white;
+  padding: 13px 22px;
+  border-radius: 6px;
+  border: 1px #917cddec solid;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+}
+.btn:hover {
+  color: white;
+  background: linear-gradient(to left, #568ad3 0, #0f58bd 100%);
+}
