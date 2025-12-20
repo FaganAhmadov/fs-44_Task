@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+.bank-cards {
+  max-width: 900px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card {
+  padding: 10px;
+  width: 315px;
+  height: 200px;
+  background-color: #8e44ad;
+  font-family: "Courier New", Courier, monospace;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.card:nth-child(2) {
+  background-color: #009432;
+}
+.card:nth-child(3) {
+  background-color: #0652dd;
+}
+.card:nth-child(4) {
+  background-color: black;
+}
+
+.visa-img {
+  height: 35px;
+}
+.chip-img {
+  width: 50px;
+}
+
+.card-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-hdr,
+.date {
+  font-size: 10px;
+}
+.date-hdr,
+.date {
+}
