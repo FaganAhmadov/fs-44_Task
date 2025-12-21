@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0; */
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+}
+::selection {
+  color: #fff;
+  background: #f7b633;
+}
+.container {
+  max-width: 1320px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.servis-card {
+  padding: 30px;
+  width: 28%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.servis-icon {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+  margin: 20px 0 20px 0;
+}
+
+p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+  color: gray;
+}
