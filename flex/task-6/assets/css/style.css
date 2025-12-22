@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  max-width: 1150px;
+  margin: 100px auto;
+}
+.container {
+  display: flex;
+  gap: 30px;
+}
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+.testimonial-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.testimonial {
+  width: 50%;
+}
+
+h2 {
+  line-height: 1.2;
+  font-weight: 300;
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+h3 {
+  font-weight: 300;
+  color: #ff5e15;
+  text-transform: uppercase;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+p {
+  margin-bottom: 16px;
+}
+.worker-about {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+}
+.worker-name {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #ff5e15;
+}
