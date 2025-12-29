@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1140px;
+  margin: 100px auto;
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #999999;
+}
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 30px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+  p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ffa62b;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+.card-img {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.card {
+  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.1);
+}
+.card:nth-child(1) {
+  .card-img {
+    background-image: url("https://preview.colorlib.com/theme/buildream/images/staff-1.jpg");
+  }
+}
+.card:nth-child(2) {
+  .card-img {
+    background-image: url("	https://preview.colorlib.com/theme/buildream/images/staff-2.jpg");
+  }
+}
+.card:nth-child(3) {
+  .card-img {
+    background-image: url("https://preview.colorlib.com/theme/buildream/images/staff-3.jpg");
+  }
+}
+.card:nth-child(4) {
+  .card-img {
+    background-image: url("https://preview.colorlib.com/theme/buildream/images/staff-4.jpg");
+  }
+}
+
+.card-icon i {
+  background-color: #3d424a;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  color: #fff;
+  transition: 0.2s ease;
+}
+.card-icon {
+  padding: 10px;
+  position: absolute;
+  top: 190px;
+  display: grid;
+  gap: 10px;
+  opacity: 0;
+  transition: 0.2s ease;
+  i:hover {
+    background-color: #ffa62b;
+    transition: 0.2s ease;
+  }
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  transition: 0.2s ease;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.card:hover {
+  .card-icon {
+    opacity: 1;
+    transition: 0.2s ease;
+  }
+  .text {
+    background-color: #ffa62b;
+    transition: 0.2s ease;
+    p {
+      color: #fff;
+    }
+  }
+}
