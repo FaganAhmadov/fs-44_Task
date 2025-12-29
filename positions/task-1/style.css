@@ -61,7 +61,7 @@ header {
     }
     .container {
       display: grid;
-      align-items: baseline;
+      align-items: baseline; 
       grid-template-columns: 60% 40%;
       gap: 30px;
       position: relative;
