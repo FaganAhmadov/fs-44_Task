@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* font-family: "Montserrat", sans-serif; */
+/*   font-family: "Istok Web", sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px auto;
+}
+a {
+  text-decoration: none;
+}
+/* -----Header----- */
+.header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.header p {
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  color: #2c7ae7;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.header h2 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 10px;
+  font-family: Montserrat, sans-serif;
+  color: #3b3b44;
+  line-height: 1.2;
+}
+/* -----Main----- */
+
+.main {
+  margin: 0px 13px;
+  margin-bottom: 20px;
+  padding: 25px 20px;
+  border: 1px solid rgb(182, 182, 190);
+  color: #3b3b44;
+  border-radius: 9px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.4s;
+  margin-right: 10px;
+}
+.main > span {
+  font-size: 380px;
+  position: absolute;
+  left: 5px;
+  top: 50px;
+  opacity: 0;
+  color: white;
+  transition: 0.4s;
+}
+.main:hover {
+  color: white;
+  border: #9d9da3 solid 1px;
+  background-color: rgba(72, 72, 235, 0.897);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.main:hover p {
+  color: white;
+}
+.main:hover > span {
+  opacity: 0.4;
+}
+.main:hover > .main-txt > span {
+  color: #2c7ae7;
+  background: white;
+  transition: all 0.3s ease;
+}
+.main-txt > span {
+  display: inline-table;
+  color: white;
+  background: linear-gradient(to right, #2876e2 0, #3f8efc 100%);
+  padding: 28px 28px;
+  font-size: 35px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.main-txt h2 {
+  margin-bottom: 19px;
+  margin-top: 19px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+.main-txt p {
+  color: #3b3b44;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.btn {
+  background: linear-gradient(to right, #568ad3 0, #0f58bd 100%);
+  padding: 13px 22px;
+  border-radius: 6px;
+  border: 1px #917cddec solid;
+}
+.btn button {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.btn:hover {
+  color: white;
+  background: linear-gradient(to left, #568ad3 0, #0f58bd 100%);
+}
