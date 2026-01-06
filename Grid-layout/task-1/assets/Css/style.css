@@ -14,7 +14,7 @@ body {
 a {
   text-decoration: none;
 }
-/* -----Header----- */
+/* --------------------------------Header----------------------------- */
 .header {
   text-align: center;
   margin-bottom: 56px;
@@ -36,7 +36,7 @@ a {
   color: #3b3b44;
   line-height: 1.2;
 }
-/* -----Main----- */
+/* ----------------------Main---------------------- */
 
 .main {
   margin: 0px 13px;
@@ -52,7 +52,7 @@ a {
   margin-right: 10px;
 }
 .main > span {
-  font-size: 380px;
+  font-size: 472px;
   position: absolute;
   left: 5px;
   top: 50px;
@@ -79,7 +79,6 @@ a {
   transition: all 0.3s ease;
 }
 .main-txt > span {
-  display: inline-table;
   color: white;
   background: linear-gradient(to right, #2876e2 0, #3f8efc 100%);
   padding: 28px 28px;
@@ -97,11 +96,11 @@ a {
 }
 .main-txt p {
   color: #3b3b44;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 23px;
 }
 
-/* footer */
+/* ------------------------------footer-------------------------- */
 
 .footer {
   display: flex;
@@ -109,6 +108,7 @@ a {
   align-items: center;
   gap: 10px;
   margin-top: 40px;
+  margin-bottom: 50px;
 }
 .btn {
   background: linear-gradient(to right, #568ad3 0, #0f58bd 100%);
@@ -122,6 +122,50 @@ a {
   color: white;
 }
 .btn:hover {
+  cursor: pointer;
   color: white;
   background: linear-gradient(to left, #568ad3 0, #0f58bd 100%);
+}
+
+/* -------------------------------------------------------------------------------TAKS_2--------------------------------------------------------------------------------- */
+.sec-2 {
+  background-color: #f0f4f8;
+}
+.item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 40px 0px;
+}
+.item-number::after {
+  content: "";
+  display: inline-block;
+  background-color: #303036;
+  height: 1px;
+  width: 52px;
+  position: relative;
+  top: 9px;
+}
+.item-number {
+  display: flex;
+  gap: 10px;
+}
+
+.item-number span {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  color: #2c7ae7;
+  font-size: 17px;
+}
+
+.item-text h4 {
+  width: 75%;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+}
+.item-text p {
+  color: #63636b;
+  font-family: "Istok Web", sans-serif;
 }
