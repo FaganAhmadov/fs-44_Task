@@ -1,0 +1,93 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  position: relative;
+  cursor: pointer;
+  width: 200px;
+  height: 300px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  transition: all ease-in 0.7s;
+  background-color: #96ff0d;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 1;
+  transition: all linear 0.7s;
+}
+.box:hover .img1 {
+  transform: translateY(-300px);
+  scale: 0.5;
+}
+.box:hover .img2 {
+  transform: translateY(-290px);
+  scale: 1.1;
+}
+
+.box-anim1 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(150, 255, 13);
+  top: 0px;
+  left: 0px;
+  animation: box-anim1 3s ease 0s infinite normal none running;
+}
+
+.box-anim2 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(255, 7, 7);
+  top: 5px;
+  left: 5px;
+  animation: box-anim2 3s ease 0s infinite normal none running;
+}
+
+@keyframes box-anim1 {
+  0% {
+    transform: translate(0, 0);
+    border-radius: 0px;
+  }
+
+  25% {
+    transform: translate(160px, 0);
+    border-radius: 10px;
+  }
+
+  50% {
+    transform: translate(160px, 275px);
+    border-radius: 15px;
+  }
+
+  75% {
+    transform: translate(0, 275px);
+    border-radius: 20px;
+  }
+}
+ 
+@keyframes box-anim2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, 270px);
+  }
+  50% {
+    transform: translate(170px, 270px);
+  }
+  75% {
+    transform: translate(170px, 0);
+  }
+}
